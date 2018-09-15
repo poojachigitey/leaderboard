@@ -1,0 +1,30 @@
+.search {
+    margin-left: 253px;
+    display: flex;
+    margin-bottom: 9px;
+
+}
+
+.input{
+background-color:#00142D;
+border: 1px solid #0A6DAC;
+padding: 5px 84px 5px 30px;
+
+border-radius: 4px;
+color: #3A4E65;
+font-size: 16px;
+}
+.Swixer .MuiInput-root-1 {
+    font-size: 16px;
+    color: #D7D7D7;
+
+}
+.Swixer .MuiInput-underline-5:after {
+    border-bottom: 0;
+}
+.Swixer .svg:not(:root) {
+    overflow:inherit;
+}
+.Swixer .MuiTableSortLabel-root-74:focus {
+    color: rgba(232, 227, 227, 0.87);
+}

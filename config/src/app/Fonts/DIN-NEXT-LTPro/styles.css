@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'DINNextLTPro-UltraLight';
+  src: url('DINNextLTPro-UltraLight.eot?#iefix') format('embedded-opentype'),  url('DINNextLTPro-UltraLight.otf')  format('opentype'),
+	     url('DINNextLTPro-UltraLight.woff') format('woff'), url('DINNextLTPro-UltraLight.ttf')  format('truetype'), url('DINNextLTPro-UltraLight.svg#DINNextLTPro-UltraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

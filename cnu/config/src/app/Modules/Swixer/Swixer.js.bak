@@ -1,0 +1,209 @@
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import SentLogo from '../../../assets/SentLogo.svg';
+import Arrow from '../../../assets/arrow.png';
+import '../Swixer/styles/Swixer.css';
+import bg_shadow from '../../../assets/bg_shadow.png';
+import Dropdown from 'react-dropdown';
+import * as actions from './actions';
+import Icon from '../Shared/Icon';
+
+
+// import Select from '@material-ui/core/Select';
+// import NativeSelect from '@material-ui/core/NativeSelect';
+// import Input from '@material-ui/core/Input';
+// import InputLabel from '@material-ui/core/InputLabel';
+
+class Swixer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            token1: '',
+            token2: '',
+            tokenValue: 1,
+        };
+        this.handleToken1 = this.handleToken1.bind(this);
+        this.handleToken2 = this.handleToken2.bind(this);
+        this.handleTokenInput = this.handleTokenInput.bind(this);
+        this.handleConfirm = this.handleConfirm.bind(this);
+    }
+
+
+
+    handleToken1(token) {
+        this.setState({
+            token1: token.value
+        });
+    }
+
+    handleToken2(token) {
+        this.setState({
+            token2: token.value
+        });
+    }
+    handleTokenInput(event) {
+        this.setState({
+            tokenValue: event.target.value,
+        });
+    }
+
+    handleConfirm(){
+        const data = {
+            token1: this.state.token1,
+            token2: this.state.token2,
+        };
+        this.props.getReciverAddress(data);
+    }
+    render() {
+        const options = ['SENT', 'PIVX', 'ETH', 'BNB'];
+        return (
+            <div className="Swixer">
+                <div className="bg_shadow_1">
+                    {/* <img src={bg_shadow} alt="" className="img-responsive img-width" /> */}
+                </div>
+                <div className="container Swixer_content">
+                    <div className="main_content">
+                        <div className="Swixer_header">
+                            {/* <img src={SentLogo} className="img-responsive Swixer_logo" alt="Sent Logo" title="Sent Logo" /> */}
+                            <h2 className="Swixer_headline">SWIXER</h2>
+                            <h5>a Sentinel Utility</h5>
+                        </div>
+                        <div className="col-xs-12 col-md-12 Swixer_secondsection">
+                            <span className="middle_horizontal_line thick_line" />
+                            <div className="col-xs-12 col-md-6">
+                                <h3 className="para_1"><span>Swixer</span>, Sentinel's new <span>Utility</span>, takes the traditional concept of mixing transactions and goes one step further, allowing you to swap between various coins to ensure your anonymity is protected.</h3>
+                            </div>
+                            <div className="col-xs-12 col-md-6">
+                                <h4 className="para_2"><span>Swixer</span> is not a <span>Service</span> like the dVPN but is an open-source <span>Utility</span> that can be freely implemented by almost any blockchain, using the native token for transaction fees. Best of all, <span>Swixer</span> can be accessed from the web, no client needed!</h4>
+                            </div>
+                        </div>
+                        <div className="col-xs-12 col-md-12 Swixer_firstsection">
+                            <span className="middle_horizontal_line" />
+                            <div className="col-xs-6 col-md-6 token_half">
+                                <div className="Swixer_token_1">
+                                    <div className="Swixer_subtoken_1">
+                                        <h3 className="token_head">Select Token #1</h3>
+                                    </div>
+                                    <div className="dropdown_sec">
+                                        <Dropdown options={options} onChange={this.handleToken1} value={this.state.token1} placeholder="--" />
+                                        <Icon viewClass="icon-file-pdf nt_layer_icon" icon="pivx" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xs-6 col-md-6 token_half">
+                                <div className="Swixer_token_2">
+                                    <div className="Swixer_subtoken_2">
+                                        <h3 className="token_head">Select Token #2</h3>
+                                    </div>
+                                    <div className="dropdown_sec">
+                                        <Dropdown options={options} onChange={this.handleToken2} value={this.state.token2} placeholder="--" />
+                                        <Icon viewClass="icon-file-pdf nt_layer_icon" icon="pivx" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xs-12 col-md-12 Swixer_thirdsection padding_none_xs">
+                            <div className="col-xs-12 col-md-6 total_sec">
+                                <div className="total_count">
+                                    <div className="total_name hide-md">
+                                        <h4>Total</h4>
+                                    </div>
+                                    <div className="input_count">
+                                        <input type="text" className="form-control total_input" id="" onChange={this.handleTokenInput} />
+                                    </div>
+                                    <div className="total_name">
+                                        <h3>{this.state.token1}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-xs-12 col-md-6 total_sec">
+                                <div className="equal_name">
+                                    <div className="total_name">
+                                        <h4>EQUALS</h4>
+                                    </div>
+                                    <div className="input_count">
+                                        <input type="text" value={this.state.tokenValue * 2} className="form-control" id="" disabled />
+                                    </div>
+                                    <div className="total_name">
+                                        <h3>{this.state.token2}</h3>
+                                    </div>
+                                    <p className="equal_sub">(with a fixed transaction fee - 1% of 25 PIVX)</p>
+                                </div>
+                                <div className="clearfix" />
+                            </div>
+                            <button type="button" onClick={this.handleConfirm} className="btn btn-default btn_confirm" > CONFIRM</button>
+                        </div>
+                        {/* <div className="clearfix"></div> */}
+                        <div className="col-md-12 padding_none_xs">
+                            <div className="col-md-6 send_address_div">
+                                <div className="send_sub_div">
+                                    <h3 className="send_count">SEND <span>{this.state.tokenValue} {this.state.token1}</span> TO</h3>
+                                    <div className="send_address">
+                                        <h3>0xa44E5137293E855B1b7bC7E2C6f8cD796fFCB037</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-6">
+                                <div className="send_sub_div right_div">
+                                    <h3 className="send_count">ENTER <span>{this.state.token2}</span> DEPOSIT ADDRESS</h3>
+                                    <div className="send_address">
+                                        <h3>0xa44E5137293E855B1b7bC7E2C6f8cD796fFCB037</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" className="btn btn-default btn_swap">SWAP</button>
+                        </div>
+                        <div className="col-md-12 transaction_status">
+                            <h2 className="transaction_head">TRANSACTION STATUS</h2>
+                            <div className="transaction_btn">
+
+                                <ul className="transaction_list">
+                                    <li>
+                                        <h2 className="btn_recieve">TO RECIEVE PIVIX</h2>
+                                    </li>
+                                    <li className="arrow_div">
+                                        {/* <img src={Arrow} className="img-responsive arrow_logo" alt="Arrow" title="Arrow" /> */}
+                                    </li>
+                                    <li>
+                                        <h2 className="btn_sending">SENDING ETH</h2>
+                                    </li>
+                                    <li className="arrow_div">
+                                        {/* <img src={Arrow} className="img-responsive arrow_logo" alt="Arrow" title="Arrow" /> */}
+                                    </li>
+                                    <li>
+                                        <h2 className="btn_send">SENT ETH!</h2>
+                                    </li>
+                                </ul>
+                                {/* <button type="button" className="btn btn-default btn_recieve">TO RECIEVE PIVX</button>
+                            <button type="button" className="btn btn-default btn_sending">SENDING ETH</button>
+                            <button type="button" className="btn btn-default btn_send">SEND ETH!</button> */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <h6 className="swixer_footer">SENTINEL &#169; 2018 </h6>
+                </footer>
+            </div>
+        );
+    }
+}
+
+function mapStateToProps(state) {
+    return {
+    };
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+        getReciverAddress: (data) => {
+            dispatch(actions.getReciverAddress(data));
+        },
+
+    };
+}
+
+
+export default connect(
+    mapStateToProps, mapDispatchToProps
+)(Swixer);

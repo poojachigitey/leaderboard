@@ -1,0 +1,24 @@
+
+.heading{
+   color: red;
+    text-align: center;
+    font-weight: bold;
+
+}
+.search{
+    display:flex;
+    width: 400px;
+    align-items: flex-end;
+    margin:0px 0px 20px 20px;
+
+}
+.input{
+
+    width: 30%;
+    margin-left: 10px;
+  
+  }
+  .searchLabel{
+      min-width: 300px;
+      max-width: 400px;
+  }

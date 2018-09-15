@@ -1,0 +1,38 @@
+export const NAME = 'SWIXER';
+
+
+//URL endpoints
+export const URL = {
+    test: 'https://api.sentinelgroup.io/stats/sessions/daily-stats',
+    transactionStatus:'https://api.sentinelgroup.io/swaps/status?key=',
+    conversionBaseUri:'http://192.168.1.2:8000/swix/rate?node=',
+    testSwix:'http://192.168.1.2:8000/swix',
+    swixStatus:'http://192.168.1.2:8000/swix/status?hash='
+    
+};
+
+export const nodeAddress= '0x47bd80a152d0d77664d65de5789df575c9cabbdb';
+
+export const TokenName = {
+    ETH: 'ethereum',
+    SENT: 'sentinel',
+    PIVX: 'pivx',
+    BNB: 'binance-coin',
+};
+
+export  const TokenSname= {
+    ETH: 'ETH',
+    SENT: 'SENT',
+    PIVX: 'PIVX',
+    BNB: 'BNB',
+};
+
+export const decimals = {
+    ETH:10e18,
+    SENT:10e8,
+    PIVX:10e0,
+    BNB:10e18
+}
+
+
+export default TokenName;

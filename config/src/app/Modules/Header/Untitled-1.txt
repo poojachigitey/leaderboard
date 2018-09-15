@@ -1,0 +1,50 @@
+import React from "react";
+import bg_shadow from '../../../assets/bg_shadow.png';
+import logo from '../../../assets/logo.png';
+import Icon from '../Shared/Icon';
+import Dropdown from 'react-dropdown';
+
+
+export default class Header extends React.Component {
+  
+    constructor(props){
+        super(props);
+        this.handleChange = this.handleChange.bind(this);
+    }
+    handleChange(){
+       return '';
+    } 
+  render(){
+    return (
+        <div>
+                 <header className="sentinel_header">
+                    <div className="bg_shadow_1">
+                        <img src={bg_shadow} alt="" className="img-responsive" />
+                    </div>
+                    <div className="container">
+                        <div className="logo">
+                            <a href="/">
+                                <img src={logo} className="img-responsive sentienl_logo" alt="" title="Sentinel Security Group" />
+                            </a>
+                        </div>
+                        <nav id="nav-menu-container nav_menu_social">
+                            <ul className="nav-menu socialicon_list">
+                                <li>
+                                <a href="https://medium.com/sentinel" className="" alt="" title="" target="_blank"> <Icon viewClass ="medium-m h_social_icons" icon ="medium-m"/></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/SentinelGroupio" alt="" className="" title="" target="_blank"><Icon viewClass ="medium-m h_social_icons" icon ="twitter-logo"/></a>
+                                </li>
+                                <li>
+                                    <a href="https://t.me/sentinelsecuritygroup" alt="" className="" title="" target="_blank"><Icon viewClass ="medium-m h_social_icons" icon="telegram-plane" /></a>
+                                </li>
+                            </ul>
+                        </nav >
+                        {/* <Dropdown options={['English', 'Chinese', 'Japanese']} onChange={this.handleChange} value={'English'} placeholder="English" /> */}
+                    </div >
+                </header >
+        </div>
+    );
+  }
+    
+}

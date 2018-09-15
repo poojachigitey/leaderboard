@@ -1,0 +1,15 @@
+no negative number
+multiple dots
+ 8 decimal precison
+ no alpha bets
+
+
+
+ cors issue 
+
+ drop with image
+
+get address api not intact
+
+ transaction animation
+

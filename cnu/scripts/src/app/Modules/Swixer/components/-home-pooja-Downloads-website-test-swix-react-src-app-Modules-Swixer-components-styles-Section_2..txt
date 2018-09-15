@@ -1,0 +1,1 @@
+/home/pooja/Downloads/website-test-swix-react/src/app/Modules/Swixer/components/styles/Section_2.css

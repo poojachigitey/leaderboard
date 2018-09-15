@@ -1,0 +1,142 @@
+label {
+    font-weight: normal;
+}
+.Swixer .container.rules{
+    background: #00142D;
+    padding-bottom: 47px;
+    padding-top: 37px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Swixer .col3 {
+    background-color: #00142D;
+}
+.Swixer .col3 .cup {
+    margin-left:-195px;
+    float: left;
+    margin-top: -44px;
+    height: 295px;
+    width: 243px;
+}
+.Swixer .col3 .coins {
+    float: right;
+    margin-top: 88px;
+    margin-right: -140px;
+    width: 197px;
+    height: 177px;
+}
+.Swixer  .col3 .inside {
+    border: none;
+    background-color: #001D32;
+    color: #EFB77C;
+    display: inline-block;
+   
+    /* height: 53.62px; */
+    margin: auto;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    margin-top: 8px;
+    text-align: center;
+    padding: 10px 30px;
+    margin-bottom: 44px;
+    border-radius: 6px;
+}
+.Swixer .container .numbers {
+    width:100%;
+    text-align: left;
+    padding-left: 48px;
+}
+.Swixer .container .numbers .name{
+    margin-bottom: 42px;
+
+}
+.Swixer .container .numbers span {
+    position: absolute;
+    /* text-align: center; */
+    /* margin-left: -9px; */
+    text-align: center;
+    right: 0;
+    top: 4px;
+    /* margin-top: -12.5px; */
+    /* height: 25px; */
+    /* bottom: 0; */
+    left: 0;
+    color: #EFB77C;
+    font-size: 28px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+   
+}
+.Swixer .container .numbers p {
+  
+    color: #E5E5E5;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    margin-left: 72px;
+    margin-top: 1px;
+    margin-right: 103px;
+}
+.Swixer .container .numbers .number {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color:#274E73;
+    color:#EFB77C;
+    margin: auto;
+    float: left;
+    position: relative;
+    margin-left: -10px;
+}
+
+.Swixer .container .visit {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-variant: 'Regular';
+    color: #D7D7D7;
+    float:right;
+    margin-right: 83px;
+    margin-top: 38px;
+}
+.Swixer .refund_address{
+    margin-top: 50px;
+}
+
+
+/* Referal dashboard responsive section_3 css starts here */
+@media only screen and (max-width: 768px) { 
+    .Swixer .col3 .cup {
+        display: none;
+    }
+    .Swixer .col3 .coins{
+        display: none;
+    }
+    .Swixer .container .numbers p {
+        margin-right: 10px;
+        margin-left: 50px;
+        font-size: 10px !important;
+    }
+
+    .Swixer .container .numbers span {
+        top: 2px;
+        font-size: 20px;
+    }
+    .Swixer .container .numbers .number {
+        width: 35px;
+        height: 35px;
+    }
+    .Swixer .container .numbers {
+        margin-left: -10px;
+    }
+    .Swixer .container .visit {
+        font-size: 10px;
+        margin-top: 20px;
+        margin-right: 74px;
+        
+    }
+    .Swixer .col3 .inside {
+        font-size: 18px;
+    }
+}
+
+/* Referal dashboard responsive section_3 css Ends here */

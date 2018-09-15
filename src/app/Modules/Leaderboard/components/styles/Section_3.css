@@ -1,0 +1,356 @@
+label {
+    font-weight: normal;
+}
+.Leaderboard .container.rules{
+    background: #00142D;
+    padding-bottom: 47px;
+    padding-top: 37px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 6px;
+}
+/* .Leaderboard .col3 {
+    background-color: #00142D;
+    background-image: url('../coins.svg'),url('../cup.png');
+	
+background-repeat: no-repeat,no-repeat;
+    background-position: right top, left top;
+	background-size: 197px 177px;
+} */
+.Leaderboard .col3 .cup {
+        margin-left: -175px;
+    float: left;
+    margin-top: 256px;
+    height: 274px;
+    width: 223px;
+}
+.Leaderboard .col3 .coins {
+    float: right;
+    margin-top: 348px;
+    margin-right: -70px;
+    width: 170px;
+    height: 177px;
+}
+.Leaderboard  .col3 .inside {
+    border: none;
+    background-color: #001D32;
+    color: #EFB77C;
+    display: inline-block;
+   
+    /* height: 53.62px; */
+    margin: auto;
+    font-family: 'open_sansregular';
+    font-size: 24px;
+    margin-top: 8px;
+    text-align: center;
+    padding: 10px 30px;
+
+    margin-bottom: 44px;
+    border-radius: 6px;
+}
+.Leaderboard .container .numbers {
+    width:90%;
+    /* text-align: left; */
+    /* padding-left: 48px; */
+    margin: auto;
+    margin-bottom:30px;
+    
+}
+.Leaderboard .container .numbers .name{
+    margin-bottom: 42px;
+
+}
+.Leaderboard .container .numbers .paragraph {
+
+    text-align: left;
+    color: #d7d7d7;
+    font-size: 18px;
+    font-family: 'open_sansregular';
+    margin-left:111px;
+    margin-right: 20px;
+    line-height: none;
+    /* display: flex; */
+}
+
+.Leaderboard .container .numbers p {
+  
+    color: #d7d7d7;
+    font-family: 'open_sansregular';
+    font-size: 16px;
+    margin-left: 72px;
+    margin-top: 1px;
+    margin-right: 103px;
+}
+
+.Leaderboard .container .numbers .number {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color:#274E73;
+    color:#EFB77C;
+    margin: auto;
+    float: left;
+    margin-left: 45px;
+    margin-top: -3px;
+}
+
+.Leaderboard .container .visit {
+    font-family: 'open_sansregular';
+    font-size: 18px;
+    color: #EFB77C;
+    /* float:right; */
+    margin-right: 70px;
+    margin-top: 38px;
+    text-decoration: none;
+}
+.Leaderboard .refund_address{
+    margin-top: 50px;
+}
+.Leaderboard .numbers .number {
+    text-align: center;
+    font-size:22px;
+    padding-top:2px;
+    padding-left: 2px;
+}
+
+.Leaderboard .numbers .paragraph a {
+    color: #efb77c;
+}
+
+/* Referal dashboard responsive section_3 css Ends here */
+
+
+@media only screen and (min-width: 992px) and (max-width: 1400px) {  
+    .Leaderboard .container .numbers .paragraph {
+        font-size: 16px;
+        margin-right: 14px;
+    }
+    .Leaderboard .container .visit {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+
+
+
+    .Leaderboard .col3  {
+        background-image: none;
+    }
+
+.Leaderboard .container .numbers p {
+        margin-right: 10px;
+        margin-left: 50px;
+        font-size: 14px !important;
+    }
+
+    /* .Leaderboard .container .numbers span {
+        top: 2px;
+        font-size: 20px;
+    } */
+    .Leaderboard .container .numbers .number {
+        width: 35px;
+        height: 35px;
+    }
+    .Leaderboard .container .numbers {
+        margin-left: 20px;
+    }
+    .Leaderboard .container .visit {
+        font-size: 15px;
+        /* margin-top: 20px;
+        margin-right: 74px; */
+        float: none;
+        margin: auto;
+        line-height: 3em;
+    }
+    .Leaderboard .col3 .inside {
+        font-size: 18px;
+    }
+    .Leaderboard .numbers .number {
+        padding-top:3px;
+        padding-left: 2px;
+    }
+    .Leaderboard .container .numbers .paragraph {
+        font-size: 15px;
+        margin-right: 14px;
+    }
+    .download {
+        width: 165px;
+        margin: auto;
+    }
+}
+
+ /* .Leaderboard .col3 .cup {
+        display: none;
+    }
+    .Leaderboard .col3 .coins{
+        display: none;
+    } */
+    /* .Leaderboard .col3  {
+        background-image: none;
+    }
+
+.Leaderboard .container .numbers p {
+        margin-right: 10px;
+        margin-left: 50px;
+        font-size: 14px !important;
+    }
+
+    .Leaderboard .container .numbers span {
+        top: 2px;
+        font-size: 20px;
+    }
+    .Leaderboard .container .numbers .number {
+        width: 35px;
+        height: 35px;
+    }
+    .Leaderboard .container .numbers {
+        margin-left: -10px;
+    }
+    .Leaderboard .container .visit {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-right: 74px;
+        
+    }
+    .Leaderboard .col3 .inside {
+        font-size: 18px;
+    }
+    .Leaderboard .numbers .number {
+        padding-top:3px;
+        padding-left: 2px;
+    }
+    .Leaderboard .container .numbers .paragraph {
+        font-size: 13px;
+        margin-right: 14px;
+    }
+} */
+
+
+
+/* Referal dashboard responsive section_3 css starts here */
+@media only screen and (min-width: 481px) and (max-width: 767px) { 
+    /* .Leaderboard .col3 .cup {
+        display: none;
+    }
+    .Leaderboard .col3 .coins{
+        display: none;
+    } */
+    .Leaderboard .container .numbers p {
+        margin-right: 10px;
+        margin-left: 50px;
+        font-size: 10px !important;
+    }
+
+    /* .Leaderboard .container .numbers {
+        top: 2px;
+        font-size: 18px;
+    } */
+    .Leaderboard .container .numbers .number {
+        width: 30px;
+        height: 30px;
+    }
+    .Leaderboard .container .numbers {
+        margin-left: 15px;
+    }
+    .Leaderboard .container .visit {
+        font-size: 13px;
+        /* margin-top: 20px;
+        margin-right: 74px; */
+        margin: auto;
+        float: none;
+        line-height: 3em;
+    }
+    .Leaderboard .col3 .inside {
+        font-size: 18px;
+    }
+    container rules {
+
+    }
+    .Leaderboard .container .numbers .number {
+        margin-left: 36px;
+        font-size: 18px;
+    }
+    .Leaderboard .numbers .number {
+        padding-top: 3px;
+        padding-left: 10px;
+    }
+    .Leaderboard .container .numbers .paragraph {
+        font-size: 14px;
+        margin-left:88px;
+        margin-right: 14px;
+    }
+    .download {
+        width: 165px;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) { 
+    .Leaderboard .col3  {
+        background-image: none;
+    }
+    .Leaderboard .numbers .number {
+    padding-top: 6px;
+    padding-left: 10px;
+    }
+    .Leaderboard .container .numbers span {
+        font-size:10px;
+    }
+    .Leaderboard .container .numbers .number {
+        width: 25px;
+        height: 25px;
+        margin-left: 41px;
+        margin-top: 1px;
+    }
+    .Leaderboard .container .numbers {
+        margin-left: 10px;
+    }
+    .Leaderboard .container .numbers .paragraph {
+        margin-left: 85px;
+        font-size: 10px;
+    }
+    .Leaderboard .col3 .inside {
+        font-size: 15px;
+    }
+    .Leaderboard .container .visit {
+        font-size: 12px;
+        font-family: 'open_sansregular';
+        text-align: center;
+        margin: auto;
+        float: none;
+        line-height: 3em;
+    }
+    .Leaderboard .container.rules {
+        border-bottom: 0px;
+        margin-top:0px;
+    }
+    .download {
+        width: 130px;
+        margin: auto;
+    }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+
+/* .Leaderboard .jss6 {
+    font-size: 16px;
+    color: #D7D7D7;
+} */
+.Leaderboard .ss10:after {
+
+    border-bottom: 0;
+
+}
+
+
+/* .Leaderboard .MuiInput-root-1 {
+    font-size: 16px;
+    color: #D7D7D7;
+
+} */
+.Leaderboard .jss5:after {
+    border-bottom: 0;
+}
+.Leaderboard .svg:not(:root) {
+    overflow:inherit;
+}
+.Leaderboard .jss74:focus {
+    color: rgba(232, 227, 227, 0.87);
+}

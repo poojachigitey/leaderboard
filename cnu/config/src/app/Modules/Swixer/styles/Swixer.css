@@ -1,0 +1,105 @@
+body {
+
+    background-image: radial-gradient(circle at 49.41% 1.55%, #28102E, transparent 100%), radial-gradient(circle at 47.95% 97.06%, #224e89, transparent 100%), radial-gradient(circle at 50% 50%, #04091a, #04091a 100%);
+    background-attachment: fixed;
+
+    display: block;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    width: 100%;
+
+
+}
+/* Open Sans SemiBold font family */
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../../../Fonts/Open-Sans Regular/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../../../Fonts/Open-Sans Regular/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+/* DIN-Pro Regular font family */
+@font-face {
+    font-family:'DINPro-Regular';
+    src: url('../../../Fonts/Din-Pro-Regular/DINPro-Regular.eot');
+	src: url('../../../Fonts/Din-Pro-Regular/DINPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../../../Fonts/Din-Pro-Regular/DINPro-Regular.woff2') format('woff2'),
+		url('../../../Fonts/Din-Pro-Regular/DINPro-Regular.woff') format('woff'),
+		url('../../../Fonts/Din-Pro-Regular/DINPro-Regular.svg#DINPro-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+/* DIN-PRO-Bold Font Family */
+
+@font-face {
+    font-family: 'DINPro-Bold';
+    src: url('../../../Fonts/DIN-PRO-Bold/DINPro-Bold.eot?#iefix') format('embedded-opentype'), url('../../../Fonts/DIN-PRO-Bold/DINPro-Bold.otf') format('opentype'), url('../../../Fonts/DIN-PRO-Bold/DINPro-Bold.woff') format('woff'), url('../../../Fonts/DIN-PRO-Bold/DINPro-Bold.ttf') format('truetype'), url('../../../Fonts/DIN-PRO-Bold/DINPro-Bold.svg#DINPro-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* //DIN-NEXT-LTPro Font Family */
+
+@font-face {
+    font-family: 'DINNextLTPro-UltraLight';
+    src: url('../../../Fonts/DIN-NEXT-LTPro/DINNextLTPro-UltraLight.eot?#iefix') format('embedded-opentype'), url('../../../Fonts/DIN-NEXT-LTPro/DINNextLTPro-UltraLight.otf') format('opentype'), url('../../../Fonts/DIN-NEXT-LTPro/DINNextLTPro-UltraLight.woff') format('woff'), url('../../../Fonts/DIN-NEXT-LTPro/DINNextLTPro-UltraLight.ttf') format('truetype'), url('../../../Fonts/DIN-NEXT-LTPro/DINNextLTPro-UltraLight.svg#DINNextLTPro-UltraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* DIN-PRO-Medium Font Family */
+
+@font-face {
+    font-family: 'DINPro-Medium';
+    src: url('../../../Fonts/DIN-PRO-Medium/DINPro-Medium.eot?#iefix') format('embedded-opentype'), url('../../../Fonts/DIN-PRO-Medium/DINPro-Medium.otf') format('opentype'), url('../../../Fonts/DIN-PRO-Medium/DINPro-Medium.woff') format('woff'), url('../../../Fonts/DIN-PRO-Medium/DINPro-Medium.ttf') format('truetype'), url('../../../Fonts/DIN-PRO-Medium/DINPro-Medium.svg#DINPro-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* DIN-PRO-Black Font Family */
+
+@font-face {
+    font-family: 'DINPro-Black';
+    src: url('../../../Fonts/DIN-PRO-Black/DINPro-Black.eot?#iefix') format('embedded-opentype'), url('../../../Fonts/DIN-PRO-Black/DINPro-Black.otf') format('opentype'), url('../../../Fonts/DIN-PRO-Black/DINPro-Black.woff') format('woff'), url('../../../Fonts/DIN-PRO-Black/DINPro-Black.ttf') format('truetype'), url('../../../Fonts/DIN-PRO-Black/DINPro-Black.svg#DINPro-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* DIN-30640-Std Font Family */
+
+@font-face {
+    font-family: 'DINNeuzeitGroteskStd-Light';
+    src: url('../../../Fonts/DIN-30640-Std/DINNeuzeitGroteskStd-Light.eot?#iefix') format('embedded-opentype'), url('../../../Fonts/DIN-30640-Std/DINNeuzeitGroteskStd-Light.otf') format('opentype'), url('../../../Fonts/DIN-30640-Std/DINNeuzeitGroteskStd-Light.woff') format('woff'), url('../../../Fonts/DIN-30640-Std/DINNeuzeitGroteskStd-Light.ttf') format('truetype'), url('../../../Fonts/DIN-30640-Std/DINNeuzeitGroteskStd-Light.svg#DINNeuzeitGroteskStd-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+
+}
+
+/* ----------- Retina Screens ----------- */
+
+@media (min-width: 1401px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .Swixer .container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1401px) {
+    .Swixer .container {
+        max-width: 1400px;
+    }
+}
+
+/* @media (min-width: 1600px) {
+    .Swixer .container {
+        max-width: 1600px;
+    }
+} */

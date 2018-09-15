@@ -1,0 +1,269 @@
+.dd-wrapper {
+    width: 40%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.dd-header {
+    background: #615d77;
+    padding: 20px 20px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.dd-header-title {
+    display: inline;
+}
+
+.dd-header-title-value {
+    font-size: 20px;
+    color: #ebb675;
+    display: inline-block;
+    padding: 0 25px 0 10px;
+}
+
+.dd-header-title-wrapper {
+    display: flex;
+    background: black;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    width: 50px;
+    height: 30px;
+}
+
+.dd-title-content {}
+
+.chevron {
+    display: inline-block;
+}
+
+.dd-chevron {
+    width: 15px;
+}
+/* .dd-list .dd-list-item:nth-child(2) img {
+    width: 14px;
+    top: 15px;
+} */
+.dd-list {
+    display: flex;
+    flex-grow: 1;
+    background: #615d77;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 20px;
+    padding-top: 0;
+    z-index: 20;
+    position: absolute;
+    margin-top: -15px;
+    border-bottom-right-radius: 5px;
+}
+
+.dd-title-image {
+    width: 15px;
+    margin-top : -3px;
+}
+
+.dd-list-item {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+    margin-left: 44px;
+    z-index: 100;
+    padding: 3px 0px;
+}
+
+.dd-list-image {
+    width: 15px;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8.5px;
+}
+.dd2 .dd-list-image {
+    width: 15px;
+    float: left;
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    margin-top: -8.5px;
+}
+.dd2 .dd-list-item-value {
+    float: left;
+    margin: 0;
+    padding-left: 21px;
+    font-size: 20px;
+}
+.dd-list-item-value {
+    float: left;
+    margin: 0;
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+@media (min-width: 320px) and (max-width:769px) {
+    .dd-list-item-value {
+        float: left;
+        margin: 0;
+        padding-left: 31px;
+        font-size: 16px;
+    }
+    .dd-list-item {
+        display: block;
+        width: 115px;
+        vertical-align: middle;
+        position: relative;
+        z-index: 100;
+        padding: 3px 0px;
+        text-align: left;
+        margin: auto;
+    }
+    .dd-list-image {
+        width: 15px;
+        float: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 4px;
+        top: 50%;
+        margin-top: -7.5px;
+    }
+    .dd2 .dd-list-item-value {
+        float: left;
+        margin: 0;
+        padding-left: 29px;
+        font-size: 16px;
+    }
+    .dd2 .dd-list-image {
+        width: 15px;
+        float: left;
+        vertical-align: middle;
+        position: absolute;
+        left: 1px;
+        top: 50%;
+        margin-top: -7.5px;
+    }
+    .dd-header-title-value {
+        font-size: 16px;
+        display: inline-block;
+        padding: 0 32px 0 10px;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width:991px) {
+    .Swixer .dd-header {
+        padding: 20px 0px;
+    }
+    .dd1 .dd-list-image {
+        width: 15px;
+        float: left;
+        vertical-align: middle;
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        margin-top: -7.5px;
+    }
+    .dd-wrapper.dd1 .dd-header-title {
+        margin-right: -7px;
+    }
+
+    .dd-wrapper.dd2 .dd-header-title {
+        margin-left: -10px;
+    }
+    .dd2 .dd-list-item {
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        position: relative;
+        margin-left: 5px;
+        z-index: 100;
+        padding: 3px 0px;
+    }
+    .dd2 .dd-list-image {
+        width: 15px;
+        float: left;
+        position: absolute;
+        left: -12px;
+        top: 50%;
+        margin-top: -7.5px;
+    }
+    .dd2 .dd-list-item-value {
+        float: left;
+        margin: 0;
+        padding-left: 13px;
+        font-size: 16px;
+    }
+    .dd-list-item {
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        position: relative;
+        margin-left: 5px;
+        z-index: 100;
+        padding: 3px 0px;
+    }
+    .dd-list-item-value {
+        float: left;
+        margin: 0;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+    .dd-header-title-value {
+        font-size: 16px;
+        display: inline-block;
+        padding: 0 25px 0 10px;
+    }
+    .dd-list-item-value {
+        float: left;
+        margin: 0;
+        padding-left: 25px;
+        font-size: 16px;
+    }
+    .dd2 .dd-list-item-value {
+        float: left;
+        margin: 0;
+        padding-left: 23px;
+        font-size: 16px;
+    }
+    .dd2 .dd-list-image {
+        width: 15px;
+        float: left;
+        position: absolute;
+        left: -3px;
+        top: 50%;
+        margin-top: -7.5px;
+    }
+    
+    .dd-list {
+        width: 100%;
+    }
+    .dd-list-item {
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        position: relative;
+        margin-left: 10px;
+        z-index: 100;
+        padding: 3px 0px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width:1401px) {
+    .dd-list-item {
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        position: relative;
+        margin-left: 15px;
+        z-index: 100;
+        padding: 3px 0px;
+    }
+}
